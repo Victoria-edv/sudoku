@@ -39,8 +39,8 @@ public class Board {
     }
 
     public boolean changeValue(final int col, final int row, final int value){
-        var space = spaces.get(col).get(row);
-        if (space.isFixed()){
+        Space space = spaces.get(col).get(row);
+        if (space.isFixed()){ 
             return false;
         }
 
@@ -49,7 +49,7 @@ public class Board {
     }
 
     public boolean clearValue(final int col, final int row){
-        var space = spaces.get(col).get(row);
+        Space space = spaces.get(col).get(row);
         if (space.isFixed()){
             return false;
         }
